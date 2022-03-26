@@ -1,0 +1,187 @@
+/*Fuente Josefin Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/*Variables*/
+$navbar-top: #D82148;
+$blog-container: #E5E5E5;
+$blog-content: #C4C4C4;
+$font-primary: 'Josefin Sans', sans-serif;
+
+.container-navbar-top{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4.5rem;
+    min-width: 320px;
+    background: $navbar-top;
+    .content-navbar-top{
+        display: flex;
+        place-items: center;
+        width: 95%;
+        height: 4.5rem;
+        max-height: 4.5rem;
+        margin: 0 auto;
+        .social-red{
+            width: 3rem;
+            height: 3rem;
+            border: none;
+            border-radius: 50%;
+            background: transparent;
+            a{
+                width: 3rem;
+                height: 3rem;
+            }
+            img{
+                width: 3rem;
+                height: 3rem;
+                border: none;
+                border-radius: 50%;
+            }
+        }
+        h2{
+            display: block;
+            width: 100%;
+            height: auto;
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: $font-primary;
+            font-weight: bold;
+        }
+        .list-blogs{
+            width: 3rem;
+            height: 3rem;
+            border: none;
+            border-radius: 50%;
+            a{
+                width: 3rem;
+                height: 3rem;
+            }
+            img{
+                width: 3rem;
+                height: 3rem;
+                border: none;
+                border-radius: 50%;
+            }
+        }
+
+    }
+}
+.container-imagebook{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    min-width: 320px;
+    height: 23rem;
+    background: transparent;
+    .content-imagebook{
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 17rem;
+        height: auto;
+        margin: 0 auto;
+        img{
+            width: 17rem;
+            height: 17rem;
+            margin: 0 auto;
+        }
+        h1{
+            display: inline-block;
+            position: absolute;
+            color: transparent;
+        }
+    }
+}
+.line{
+    width: 95%;
+    height: .5rem;
+    background: $navbar-top;
+    margin:  0 auto;
+}
+.container-blogs{
+    display: flex;
+    width: 30.4rem;
+    min-width: 304px;
+    height: 16.5rem;
+    background: $blog-container;
+    margin: 0 auto;
+    border: none;
+    border-end-start-radius: .5rem;
+    border-end-end-radius: .5rem;
+    margin-block-end: 1.5rem;
+    .content-blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 15rem);
+        place-content: center;
+        width: 95%;
+        max-width: 320px;
+        height: 13rem;
+        margin: 1.5rem auto;
+        .image-blog{
+            width: 15rem;
+            max-width: 15rem;
+            height: auto;
+            display: flex;
+            place-items: center;
+            
+            img{
+                width: 11.5rem;
+                height:  11.5rem;
+                margin: 0 auto;
+            }
+        }
+    }
+    .text-blog{
+        width: 100%;
+        max-width: 14rem;
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        margin: 1rem auto;
+        background: $blog-content;
+        border: none;
+        border-radius: 1rem;
+        padding: .5rem;
+        p{
+            display: flex;
+            width: 100%;
+            max-width: 14rem;
+            height: auto;
+            color: black;
+            font-size: 1.2rem ;
+            font-family: $font-primary;
+            text-align: center;
+            flex-wrap: wrap;
+            text-align: right;
+            padding: .5rem;
+        }
+        h3{
+            color: black;
+            font-size: 1.4rem;
+            font-family: $font-primary;
+            font-weight: bold;
+            text-align: right;
+            padding: .5rem;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+
+
+
